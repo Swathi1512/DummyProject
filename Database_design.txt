@@ -1,0 +1,65 @@
+DATABASE DESIGN
+
+COMPANY DETAILS
+
+CompanyId -> int -> Primary Key
+CompanyName -> varchar() -> not null
+CompanyAddress -> varchar() -> not null
+CompanyContactNo -> varchar() -> not null
+CompanyLogo -> varbinary(max) -> not null
+
+EMPLOYEE DETAILS
+
+EmployeeID -> int -> Primary Key
+EmployeeName -> varchar() -> not null
+EmployeeAddress -> varchar() -> not null
+DateOfBirth -> Date -> not null
+ContactNo -> varchar() -> not null -> Unique
+CompanyId -> int -> Foreign Key
+EmailId -> varchar() -> not null -> Unique
+Profession -> varchar() -> not null
+DateOfJoining -> Date -> not null
+//BasicSalary -> Money -> not null
+Resume -> varbinary(max) -> not null
+OfferLetter -> varbinary(max) -> not null
+OverAllExperience
+Stream
+
+ATTENDANCE Details
+
+EmployeeID -> int -> Foreign Key
+Date -> Date
+InTime -> Time
+OutTime -> Time
+Notes -> varchar()
+
+Public Holidays
+
+Year -> Year
+Date -> Date
+HolidayDescription -> varchar()
+
+PAYROLL
+
+EmployeeId ->Foreign Key
+BasicSalary -> Money -> not null
+FromDate -> Date -> not null
+ToDate -> Date -> not null
+HouseRentAllowance -> Money -> not null
+PersonalAllowance -> Money -> not null
+Bonus -> Money -> not null
+ProvidentFund -> Money -> not null
+TotalSalary -> Money -> not null
+
+REPORTING SYSTEM
+
+
+
+
+
+
+
+
+
+
+
